@@ -5,7 +5,7 @@ public class Prime {
   public static void main(String[] args)
   {
   long sum=0;
-  for(long i=0;i<20000;i++)
+  for(long i=2;i<2000000;i++)
     {
 	  boolean b=ifPrime(i);
 	  
@@ -17,7 +17,7 @@ public class Prime {
   }
   private static   boolean ifPrime(long n)
   {
-  for(int j=2;j<=(n/2);j++)
+  for(int j=2;j<=(Math.sqrt(n));j++)
      {
 	 if(n%j==0)
 	 return false;
